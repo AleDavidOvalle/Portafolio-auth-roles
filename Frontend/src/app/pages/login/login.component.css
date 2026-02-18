@@ -1,0 +1,84 @@
+/* Fondo general */
+.login-container {
+  min-height: 100vh;
+  background-color: #F3F4F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: #FFFFFF;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Subtítulo */
+.subtitle {
+  color: #6B7280;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Título */
+.login-card h2 {
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+/* Grupo */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* Inputs */
+.login-card input {
+  padding: 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.login-card input:focus {
+  border-color: #059669;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.15);
+}
+
+/* Botón */
+.login-card button {
+  margin-top: 8px;
+  padding: 12px;
+  background-color: #059669;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-card button:hover {
+  background-color: #047857;
+}
+
+/* Error */
+.error-message {
+  margin-top: 12px;
+  color: #DC2626;
+  font-size: 14px;
+}
