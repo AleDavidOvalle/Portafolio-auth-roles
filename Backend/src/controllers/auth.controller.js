@@ -84,4 +84,31 @@ export const login = async (req, res) => {
     });
   }
 };
-  
+export const dashboard = async (req, res) => {
+  try {
+    res.json({
+      message: "Bienvenido al dashboard",
+      user: req.user,
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Error en el dashboard" });
+  }
+};
+export const updateProfile = async (req, res) => {
+  try {
+    const { name } = req.body;
+
+    const updatedUser = await prisma.user.update({
+      where: { id: req.user.userId },
+      data: { name },
+    });
+
+    res.json({
+      message: "Perfil actualizado",
+      user: updatedUser,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Error al actualizar perfil" });
+  }
+};
