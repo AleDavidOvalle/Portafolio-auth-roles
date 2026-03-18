@@ -1,1 +1,24 @@
-<p>dashboard works!</p>
+<div class="page-container">
+    <div class="card">
+
+        <div class="card-header">
+            <h2>Dashboard</h2>
+            <button class="btn btn-danger" style="width:auto;" (click)="logout()">
+                Cerrar sesión
+            </button>
+        </div>
+
+        <hr>
+
+        <div *ngIf="data" class="mt-20">
+            <p><strong>Mensaje:</strong> {{ data.message }}</p>
+            <p><strong>ID:</strong> {{ data.user.userId }}</p>
+            <p><strong>Rol:</strong> {{ data.user.role }}</p>
+        </div>
+
+        <button class="btn btn-secondary mt-20" (click)="goToProfile()">
+            Ir al perfil
+        </button>
+
+</div>
+</div>

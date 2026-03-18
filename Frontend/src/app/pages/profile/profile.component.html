@@ -1,0 +1,23 @@
+<div class="page-container">
+  <div class="card">
+
+    <div class="card-header">
+      <h2>Perfil</h2>
+      <button class="btn btn-danger" style="width:auto;" (click)="logout()">
+        Cerrar sesión
+      </button>
+    </div>
+
+    <hr>
+
+    <div class="form-group mt-20">
+      <label>Nuevo nombre</label>
+      <input [(ngModel)]="name" placeholder="Tu nombre">
+    </div>
+
+    <button class="btn btn-primary" (click)="update()">
+      Actualizar perfil
+    </button>
+
+  </div>
+</div>

@@ -33,6 +33,13 @@
       <p class="error-message" *ngIf="error">
         {{ error }}
       </p>
+      <p class="subtitle" style="margin-top: 16px; text-align: center;">
+        ¿No tienes cuenta?
+      </p>
+      
+      <button type="button" (click)="goToRegister()" style="background:#2563EB;">
+        Registrarse
+      </button>
 
     </form>
 
