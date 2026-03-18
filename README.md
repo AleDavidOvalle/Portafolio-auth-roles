@@ -1,33 +1,40 @@
 # Auth & Roles Portfolio Project 🚀
 
-Sistema de autenticación y autorización por roles desarrollado como parte de mi portafolio profesional.
+Sistema de autenticación y autorización basado en JWT desarrollado como parte de mi portafolio profesional.  
+Este proyecto se enfoca en la implementación de buenas prácticas en backend, manejo de usuarios y control de acceso por roles.
 
-## 🧩 Current Features
-- User registration and login
-- JWT-based authentication
-- Role-based access control (Admin / User)
-- Secure environment variables handling
+## 🧩 Features
+- Registro de usuarios
+- Inicio de sesión con JWT
+- Autenticación stateless
+- Control de acceso basado en roles (Admin / User)
+- Protección de rutas
+- Actualización de perfil
+- Manejo de variables de entorno
+- Estructura organizada por capas
 
 ## 🛠 Tech Stack
+- Angular.Js
 - Node.js
 - Express
 - PostgreSQL
 - JWT
 - Docker (basic)
 
-## 📌 Project Status
-🚧 In progress  
-This repository represents the **first stage** of the project.  
-Upcoming features:
-- Refresh tokens
-- Role & permission guards
-- Frontend integration (Angular)
-- Improved security practices
+## 🖥️ Preview
+![Login](https://github.com/AleDavidOvalle/Portafolio-auth-roles/blob/cc536af87bb247586f0b52f1300952f743b3e613/login.png.png)
+![Register](https://github.com/AleDavidOvalle/Portafolio-auth-roles/blob/cc536af87bb247586f0b52f1300952f743b3e613/Register.png.png)
+![Profile](https://github.com/AleDavidOvalle/Portafolio-auth-roles/blob/cc536af87bb247586f0b52f1300952f743b3e613/profile.png.png)
 
-## ⚠️ Environment Setup
-Sensitive data is not included.  
-Use `.env.example` to configure your environment.
+## 📌 Project Approach
+Este proyecto forma parte de una serie de aplicaciones diseñadas para demostrar habilidades específicas de backend.
 
----
+En este caso, el enfoque principal fue:
 
-💡 This project is built incrementally to demonstrate version control, clean commits, and real-world backend practices.
+- Implementar autenticación segura
+- Aplicar control de roles
+- Mantener buenas prácticas en la estructura del código
+- Separar responsabilidades correctamente
+
+
+
